@@ -1,0 +1,17 @@
+.user {
+  color: blue;
+  align-self: start;
+}
+.user::before {
+  content: "👤 user:";
+  margin-right: 1rem;
+}
+.assistant {
+  color: black;
+  display: flex;
+}
+.assistant::before {
+  content: "🤖 bot:";
+  margin-right: 1rem;
+  white-space: nowrap;
+}
