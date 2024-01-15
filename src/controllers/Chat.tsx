@@ -1,5 +1,5 @@
 const Chat = ({ chat, sessionId }) => {
-  return `
+    return `
     <div
       x-data="{ sessionId: '${sessionId}' }"
       x-init="$store.chat.sessionId = sessionId; loading = false"
@@ -8,8 +8,8 @@ const Chat = ({ chat, sessionId }) => {
       
     >
       ${chat
-        .map((message: any) => {
-          return `
+            .map((message: any) => {
+                return `
           <div
             id="${message.id}"
             class="${message.sender} py-4 border-b-[1px] border-slate-500"
@@ -17,8 +17,8 @@ const Chat = ({ chat, sessionId }) => {
             ${message.message} <!-- Assuming message is already sanitized -->
           </div>
         `;
-        })
-        .join("")}
+            })
+            .join("")}
     </div>
   `;
 };

@@ -24,7 +24,7 @@ app
   });
 
 app.get("/", () => {
-  return baseHtml({ name: "Le chatte" });
+  return baseHtml();
 });
 
 app.post("/chat", async ({ body }: any) => {
